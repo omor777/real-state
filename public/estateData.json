@@ -1,127 +1,83 @@
 [
-    {
-      "id": 7,
-      "estate_title": "Modern Townhouse in Urban Setting",
-      "segment_name": "Townhouses",
-      "description": "Contemporary townhouse located in a vibrant neighborhood with easy access to amenities.",
-      "price": "$600,000",
-      "status": "sale",
-      "area": "1800 sq ft",
-      "location": "Brooklyn, New York",
-      "facilities": ["living room", "rooftop terrace", "garage"]
-    },
-    {
-      "id": 8,
-      "estate_title": "Cozy Townhome with Park Views",
-      "segment_name": "Townhouses",
-      "description": "Charming townhome overlooking the park, featuring modern finishes and ample natural light.",
-      "price": "$350,000",
-      "status": "sale",
-      "area": "1500 sq ft",
-      "location": "Denver, Colorado",
-      "facilities": ["living room", "private patio", "attached garage"]
-    }
-  ]
-  
-  [
-    {
-      "id": 10,
-      "estate_title": "Downtown Loft Apartment",
-      "segment_name": "Apartments",
-      "description": "Chic loft apartment in the heart of the city, featuring exposed brick walls and high ceilings.",
-      "price": "$3,500/month",
-      "status": "rent",
-      "area": "1200 sq ft",
-      "location": "New York City, New York",
-      "facilities": ["living room", "gym", "rooftop terrace"]
-    },
-    {
-      "id": 12,
-      "estate_title": "Modern Condo with Bay Views",
-      "segment_name": "Apartments",
-      "description": "Sleek condo overlooking the bay, featuring floor-to-ceiling windows and contemporary design.",
-      "price": "$800,000",
-      "status": "sale",
-      "area": "1500 sq ft",
-      "location": "San Francisco, California",
-      "facilities": ["living room", "balcony", "fitness center"]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "image": "https://i.postimg.cc/ncsMvFmc/cabin-5623592-1280.jpg",
+    "estate_title": "Mountain Cabin Retreat",
+    "segment_name": "Vacation rentals",
+    "description": "Cozy cabin nestled in the mountains, offering scenic views and access to hiking trails.",
+    "long_description": "Experience the beauty of the great outdoors with a stay in our charming mountain cabin retreat. Tucked away in the picturesque mountains of Asheville, North Carolina, this cozy cabin offers a peaceful escape from the hustle and bustle of everyday life. Step inside to discover a rustic yet modern interior, complete with wood-paneled walls, a stone fireplace, and comfortable furnishings. The fully equipped kitchen allows for easy meal preparation, while the spacious living area provides plenty of space for relaxation and entertainment. Outside, the expansive deck offers stunning views of the surrounding forest and mountains, perfect for enjoying your morning coffee or stargazing at night. With hiking trails, scenic overlooks, and quaint mountain towns just a short drive away, this cabin retreat is the perfect base for exploring the beauty of the Blue Ridge Mountains.",
+    "price": "$250/night",
+    "status": "rent",
+    "area": "1000 sq ft",
+    "location": "Asheville, North Carolina",
+    "facilities": ["fireplace", "hot tub", "deck"]
+  },
+  {
+    "id": 2,
+    "image": "https://i.postimg.cc/pdgyGgtM/family-house-2844962-1280.jpg",
+    "estate_title": "Family Home with Garden",
+    "segment_name": "Single-family homes",
+    "description": "Cozy family home with a spacious garden, perfect for outdoor gatherings.",
+    "long_description": "Nestled in a peaceful neighborhood, this charming family home offers the perfect blend of comfort and convenience. The inviting front porch welcomes you into the bright and airy living space, complete with hardwood floors and a cozy fireplace. The open-concept kitchen features granite counter tops, stainless steel appliances, and ample cabinet space. Step outside to the expansive backyard oasis, where lush landscaping and mature trees provide privacy and shade. Enjoy al fresco dining on the patio or gather around the fire pit on cool evenings. The spacious master suite boasts a walk-in closet and en-suite bathroom with dual sinks and a soaking tub. With its prime location close to parks, schools, and shopping, this home is an ideal retreat for families seeking the perfect balance of indoor and outdoor living.",
+    "price": "$400,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Austin, Texas",
+    "facilities": ["living room", "backyard garden", "garage"]
+  },
 
-  [
-    {
-      "id": 15,
-      "estate_title": "Student Housing Community",
-      "segment_name": "Student housing",
-      "description": "Modern student housing complex offering furnished units and amenities catered to student life.",
-      "price": "$1,000/month",
-      "status": "rent",
-      "area": "600 sq ft",
-      "location": "College Station, Texas",
-      "facilities": ["private bedroom", "study area", "fitness center"]
-    },
-    {
-      "id": 17,
-      "estate_title": "Student Apartment Near Campus",
-      "segment_name": "Student housing",
-      "description": "Conveniently located student apartment complex with easy access to campus and dining options.",
-      "price": "$700/month",
-      "status": "rent",
-      "area": "500 sq ft",
-      "location": "Tempe, Arizona",
-      "facilities": ["shared living space", "laundry facilities", "pool"]
-    }
-  ]
-  
+  {
+    "id": 3,
+    "image": "https://i.postimg.cc/VNdyppL4/43-584x438.jpg",
+    "estate_title": "Modern Townhouse",
+    "segment_name": "Townhouses",
+    "description": "Contemporary townhouse located in a vibrant neighborhood with easy access to amenities.",
+    "long_description": "Situated in the heart of the city, this modern townhouse offers the perfect blend of urban convenience and contemporary design. The open-concept living space features soaring ceilings, oversized windows, and sleek finishes throughout. The gourmet kitchen boasts quartz counter tops, stainless steel appliances, and a large island with seating for casual dining. Upstairs, the spacious master suite offers a private retreat with a luxurious en-suite bathroom and walk-in closet. Two additional bedrooms provide flexibility for guests or a home office. Outside, the private rooftop terrace is the perfect spot for entertaining or enjoying panoramic city views. With its prime location close to dining, shopping, and entertainment, this townhouse offers the ultimate urban lifestyle.",
+    "price": "$600,000",
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": "Brooklyn, New York",
+    "facilities": ["living room", "rooftop terrace", "garage"]
+  },
 
-  [
-    {
-      "id": 20,
-      "estate_title": "Retirement Village",
-      "segment_name": "Senior living communities",
-      "description": "Active retirement community offering independent living and amenities tailored to seniors.",
-      "price": "$300,000",
-      "status": "sale",
-      "area": "1200 sq ft",
-      "location": "Scottsdale, Arizona",
-      "facilities": ["community center", "swimming pool", "walking trails"]
-    },
-    {
-      "id": 21,
-      "estate_title": "Assisted Living Apartment",
-      "segment_name": "Senior living communities",
-      "description": "Comfortable assisted living apartment with personalized care services and social activities.",
-      "price": "$4,500/month",
-      "status": "rent",
-      "area": "800 sq ft",
-      "location": "Boca Raton, Florida",
-      "facilities": ["nursing staff", "meal service", "activity room"]
-    }
-  ]
-  
+  {
+    "id": 4,
+    "image": "https://i.postimg.cc/vBsJTBt2/42-584x438.jpg",
+    "estate_title": "Beachfront Villa",
+    "segment_name": "Vacation rentals",
+    "description": "Luxurious beachfront villa with private pool and direct beach access, perfect for a relaxing.",
+    "long_description": "Escape to paradise in our luxurious beachfront villa, where sun, sand, and surf await just steps from your door. Nestled along the pristine shores of Maui, this exquisite retreat offers unparalleled ocean views and upscale amenities for the ultimate tropical vacation. Step inside to discover a spacious living area adorned with elegant furnishings and panoramic windows framing the azure waters beyond. The gourmet kitchen is a chef's dream, equipped with high-end appliances and a large island for entertaining. Outside, the expansive lanai beckons with a private pool, alfresco dining area, and direct access to the beach. Whether you're soaking up the sun on the sand or sipping cocktails by the pool, this beachfront villa promises an unforgettable island getaway.",
+    "price": "$1,200/night",
+    "status": "rent",
+    "area": "4000 sq ft",
+    "location": "Maui, Hawaii",
+    "facilities": ["private beach access", "outdoor dining area"]
+  },
+  {
+    "id": 5,
+    "image": "https://i.postimg.cc/65yqKW5x/house-1836070-1280.jpg",
+    "estate_title": "Cozy Town home ",
+    "segment_name": "Townhouses",
+    "description": "Charming town home overlooking the park, featuring modern finishes and ample natural.",
+    "long_description": "Located in a picturesque neighborhood overlooking the park, this cozy town home offers a tranquil retreat from the hustle and bustle of city life. The inviting living room welcomes you with warm hardwood floors and a gas fireplace, perfect for cozy evenings at home. The adjacent dining area opens onto a private patio, where you can enjoy morning coffee or dine alfresco with views of the lush greenery. Upstairs, the spacious master suite boasts vaulted ceilings, a walk-in closet, and an en-suite bathroom with dual sinks and a soaking tub. Two additional bedrooms offer versatility for guests or a home office. With its prime location close to parks, trails, and amenities, this town home is the perfect blend of comfort and convenience.",
+    "price": "$350,000",
+    "status": "sale",
+    "area": "1500 sq ft",
+    "location": "Denver, Colorado",
+    "facilities": ["living room", "private patio", "attached garage"]
+  },
 
-  [
-    {
-      "id": 25,
-      "estate_title": "Beachfront Villa",
-      "segment_name": "Vacation rentals",
-      "description": "Luxurious beachfront villa with private pool and direct beach access, perfect for a relaxing getaway.",
-      "price": "$1,200/night",
-      "status": "rent",
-      "area": "4000 sq ft",
-      "location": "Maui, Hawaii",
-      "facilities": ["private beach access", "outdoor dining area", "game room"]
-    },
-    {
-      "id": 27,
-      "estate_title": "Mountain Cabin Retreat",
-      "segment_name": "Vacation rentals",
-      "description": "Cozy cabin nestled in the mountains, offering scenic views and access to hiking trails.",
-      "price": "$250/night",
-      "status": "rent",
-      "area": "1000 sq ft",
-      "location": "Asheville, North Carolina",
-      "facilities": ["fireplace", "hot tub", "deck"]
-    }
-  ]
+  {
+    "id": 6,
+    "image": "https://i.postimg.cc/5NVgk2Bp/pexels-luis-yanez-206172.jpg",
+    "estate_title": "Student Apartment",
+    "segment_name": "Student housing",
+    "description": "Conveniently located student apartment complex with easy access to campus.",
+    "long_description": "Live steps away from campus in our convenient student apartment complex! Our community offers comfortable and affordable living options just minutes from campus, making it easy to get to class and campus events. Choose from a variety of floor plans, including private bedrooms and shared living spaces, to suit your lifestyle and budget. Each apartment is fully furnished and equipped with modern amenities to ensure a comfortable living experience. Our community amenities include a fitness center, study lounge, and outdoor recreation areas for residents to enjoy. With dining options and shopping within walking distance, everything you need is right here. Join our vibrant community and experience the best of student living!",
+    "price": "$700/month",
+    "status": "rent",
+    "area": "500 sq ft",
+    "location": "Tempe, Arizona",
+    "facilities": ["shared living space", "laundry facilities", "pool"]
+  }
+]

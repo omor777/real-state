@@ -1,8 +1,11 @@
+import RealEstate from "../../components/RealEstate/RealEstate";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <RealEstate />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
