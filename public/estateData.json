@@ -1,0 +1,127 @@
+[
+    {
+      "id": 7,
+      "estate_title": "Modern Townhouse in Urban Setting",
+      "segment_name": "Townhouses",
+      "description": "Contemporary townhouse located in a vibrant neighborhood with easy access to amenities.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Brooklyn, New York",
+      "facilities": ["living room", "rooftop terrace", "garage"]
+    },
+    {
+      "id": 8,
+      "estate_title": "Cozy Townhome with Park Views",
+      "segment_name": "Townhouses",
+      "description": "Charming townhome overlooking the park, featuring modern finishes and ample natural light.",
+      "price": "$350,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "Denver, Colorado",
+      "facilities": ["living room", "private patio", "attached garage"]
+    }
+  ]
+  
+  [
+    {
+      "id": 10,
+      "estate_title": "Downtown Loft Apartment",
+      "segment_name": "Apartments",
+      "description": "Chic loft apartment in the heart of the city, featuring exposed brick walls and high ceilings.",
+      "price": "$3,500/month",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "New York City, New York",
+      "facilities": ["living room", "gym", "rooftop terrace"]
+    },
+    {
+      "id": 12,
+      "estate_title": "Modern Condo with Bay Views",
+      "segment_name": "Apartments",
+      "description": "Sleek condo overlooking the bay, featuring floor-to-ceiling windows and contemporary design.",
+      "price": "$800,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "San Francisco, California",
+      "facilities": ["living room", "balcony", "fitness center"]
+    }
+  ]
+  
+
+  [
+    {
+      "id": 15,
+      "estate_title": "Student Housing Community",
+      "segment_name": "Student housing",
+      "description": "Modern student housing complex offering furnished units and amenities catered to student life.",
+      "price": "$1,000/month",
+      "status": "rent",
+      "area": "600 sq ft",
+      "location": "College Station, Texas",
+      "facilities": ["private bedroom", "study area", "fitness center"]
+    },
+    {
+      "id": 17,
+      "estate_title": "Student Apartment Near Campus",
+      "segment_name": "Student housing",
+      "description": "Conveniently located student apartment complex with easy access to campus and dining options.",
+      "price": "$700/month",
+      "status": "rent",
+      "area": "500 sq ft",
+      "location": "Tempe, Arizona",
+      "facilities": ["shared living space", "laundry facilities", "pool"]
+    }
+  ]
+  
+
+  [
+    {
+      "id": 20,
+      "estate_title": "Retirement Village",
+      "segment_name": "Senior living communities",
+      "description": "Active retirement community offering independent living and amenities tailored to seniors.",
+      "price": "$300,000",
+      "status": "sale",
+      "area": "1200 sq ft",
+      "location": "Scottsdale, Arizona",
+      "facilities": ["community center", "swimming pool", "walking trails"]
+    },
+    {
+      "id": 21,
+      "estate_title": "Assisted Living Apartment",
+      "segment_name": "Senior living communities",
+      "description": "Comfortable assisted living apartment with personalized care services and social activities.",
+      "price": "$4,500/month",
+      "status": "rent",
+      "area": "800 sq ft",
+      "location": "Boca Raton, Florida",
+      "facilities": ["nursing staff", "meal service", "activity room"]
+    }
+  ]
+  
+
+  [
+    {
+      "id": 25,
+      "estate_title": "Beachfront Villa",
+      "segment_name": "Vacation rentals",
+      "description": "Luxurious beachfront villa with private pool and direct beach access, perfect for a relaxing getaway.",
+      "price": "$1,200/night",
+      "status": "rent",
+      "area": "4000 sq ft",
+      "location": "Maui, Hawaii",
+      "facilities": ["private beach access", "outdoor dining area", "game room"]
+    },
+    {
+      "id": 27,
+      "estate_title": "Mountain Cabin Retreat",
+      "segment_name": "Vacation rentals",
+      "description": "Cozy cabin nestled in the mountains, offering scenic views and access to hiking trails.",
+      "price": "$250/night",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "Asheville, North Carolina",
+      "facilities": ["fireplace", "hot tub", "deck"]
+    }
+  ]
