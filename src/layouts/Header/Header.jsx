@@ -46,9 +46,11 @@ const Header = () => {
           </li>
         </ul>
         <div>
-          <button className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary">
-            Login
-          </button>
+          <Link to={'/login'}>
+            <button className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary">
+              Login
+            </button>
+          </Link>
         </div>
       </nav>
     </header>
