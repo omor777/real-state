@@ -1,13 +1,16 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import useAuthContext from "../../hooks/useAuthContext";
 
 const Header = () => {
   const { user, setUser, logoutUser } = useAuthContext();
 
+  const navigate = useNavigate();
+
   const handleLogout = () => {
     logoutUser()
       .then(() => {
         setUser(null);
+        navigate("/");
       })
       .catch((error) => {
         console.error(error);
@@ -47,18 +50,6 @@ const Header = () => {
               }
             >
               Update Profile
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/register"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary font-bold"
-                  : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
-              }
-            >
-              Register
             </NavLink>
           </li>
         </ul>

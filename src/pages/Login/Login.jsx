@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuthContext from "../../hooks/useAuthContext";
 
@@ -13,13 +13,17 @@ const Login = () => {
 
   const navigate = useNavigate();
 
+  const location = useLocation();
+
+  console.log(location);
+
   const handleLogin = (data) => {
     const email = data.email;
     const password = data.password;
 
     loginUser(email, password)
       .then((result) => {
-        navigate("/");
+        navigate(location.state || "/");
       })
       .catch((error) => {
         console.error(error);
@@ -29,7 +33,7 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleLogin()
       .then(() => {
-        navigate("/");
+        navigate(location.state || "/");
       })
       .catch((error) => {
         console.error(error);
