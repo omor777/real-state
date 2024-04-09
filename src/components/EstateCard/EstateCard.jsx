@@ -11,7 +11,7 @@ const EstateCard = ({ item }) => {
     status,
     facilities,
   } = item;
-  console.log(facilities);
+  // console.log(facilities);
   return (
     <div className=" shadow-cardShadow rounded-md">
       <div className="relative">

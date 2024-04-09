@@ -1,6 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
+import useAuthContext from "../../hooks/useAuthContext";
 
 const Header = () => {
+  const { user, setUser, logoutUser } = useAuthContext();
+
+  const handleLogout = () => {
+    logoutUser()
+      .then(() => {
+        setUser(null);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  const { displayName, photoURL } = user || {};
+
+  console.log(user);
+
   return (
     <header className="bg-white py-5 shadow-navShadow">
       <nav className="container flex items-center justify-between">
@@ -46,11 +63,32 @@ const Header = () => {
           </li>
         </ul>
         <div>
-          <Link to={'/login'}>
-            <button className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary">
-              Login
-            </button>
-          </Link>
+          {user ? (
+            <div className="flex items-center space-x-3 relative">
+              <Link to={"/user_profile"} className="peer duration-300">
+                <img
+                  className="size-12 rounded-full border-2 border-primary "
+                  src={photoURL}
+                  alt="user-profile-picture"
+                />
+              </Link>
+              <span className="absolute bg-white px-4 rounded-full py-2 font-medium shadow-md -bottom-[90%] -left-12 opacity-0 peer-hover:opacity-100 duration-300">
+                {displayName}
+              </span>
+              <button
+                onClick={handleLogout}
+                className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link to={"/login"}>
+              <button className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary">
+                Login
+              </button>
+            </Link>
+          )}
         </div>
       </nav>
     </header>
