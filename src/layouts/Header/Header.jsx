@@ -16,7 +16,7 @@ const Header = () => {
 
   const { displayName, photoURL } = user || {};
 
-  console.log(user);
+  // console.log(user);
 
   return (
     <header className="bg-white py-5 shadow-navShadow">

@@ -10,7 +10,9 @@
     "status": "rent",
     "area": "1000 sq ft",
     "location": "Asheville, North Carolina",
-    "facilities": ["fireplace", "hot tub", "deck"]
+    "facilities": ["fireplace", "hot tub", "deck"],
+    "lat": 35.5951,
+    "lon": 82.5515
   },
   {
     "id": 2,
@@ -23,7 +25,9 @@
     "status": "sale",
     "area": "2500 sq ft",
     "location": "Austin, Texas",
-    "facilities": ["living room", "backyard garden", "garage"]
+    "facilities": ["living room", "backyard garden", "garage"],
+    "lat": 30.2672,
+    "lon": 97.7431
   },
 
   {
@@ -37,7 +41,9 @@
     "status": "sale",
     "area": "1800 sq ft",
     "location": "Brooklyn, New York",
-    "facilities": ["living room", "rooftop terrace", "garage"]
+    "facilities": ["living room", "rooftop terrace", "garage"],
+    "lat": 40.6782,
+    "lon": 73.9442
   },
 
   {
@@ -51,7 +57,9 @@
     "status": "rent",
     "area": "4000 sq ft",
     "location": "Maui, Hawaii",
-    "facilities": ["private beach access", "outdoor dining area"]
+    "facilities": ["private beach access", "outdoor dining area"],
+    "lat": 20.7984,
+    "lon": 156.3319
   },
   {
     "id": 5,
@@ -64,7 +72,9 @@
     "status": "sale",
     "area": "1500 sq ft",
     "location": "Denver, Colorado",
-    "facilities": ["living room", "private patio", "attached garage"]
+    "facilities": ["living room", "private patio", "attached garage"],
+    "lat": 39.5501,
+    "lon": 105.7821
   },
 
   {
@@ -78,6 +88,8 @@
     "status": "rent",
     "area": "500 sq ft",
     "location": "Tempe, Arizona",
-    "facilities": ["shared living space", "laundry facilities", "pool"]
+    "facilities": ["shared living space", "laundry facilities", "pool"],
+    "lat": 33.4255,
+    "lon": 111.94
   }
 ]

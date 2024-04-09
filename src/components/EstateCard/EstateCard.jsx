@@ -1,4 +1,5 @@
 import { IoLocationSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const EstateCard = ({ item }) => {
   const {
@@ -10,6 +11,7 @@ const EstateCard = ({ item }) => {
     price,
     status,
     facilities,
+    id,
   } = item;
   // console.log(facilities);
   return (
@@ -37,16 +39,17 @@ const EstateCard = ({ item }) => {
           </h2>
           <p className="text-gray-500">{description}</p>
         </div>
-        <button
-          type="button"
-          className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-primary text-white"
-        >
-          View Property
-        </button>
+        <Link to={`/property_details/${id}`} state={item}>
+          <button
+            type="button"
+            className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-primary text-white"
+          >
+            View Property
+          </button>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default EstateCard;
-

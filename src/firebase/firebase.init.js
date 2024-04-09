@@ -17,3 +17,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export default app;
+
+export const APIKey = "AIzaSyBN9In2RB4069bL6xoEl301RJnlhYoRXBc";
