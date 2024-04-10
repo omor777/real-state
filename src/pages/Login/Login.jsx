@@ -1,6 +1,7 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuthContext from "../../hooks/useAuthContext";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const Login = () => {
   const { loginUser, googleLogin } = useAuthContext();
@@ -42,6 +43,7 @@ const Login = () => {
 
   return (
     <section>
+      <PageTitle title={'Login - page'}/>
       <div className="w-full max-w-2xl p-8 space-y-3  shadow-cardShadow mx-auto mt-20">
         <h1 className="text-2xl font-bold text-center">Login Now</h1>
         <form onSubmit={handleSubmit(handleLogin)} className="space-y-6">

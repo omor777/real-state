@@ -1,8 +1,11 @@
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const UpdateProfile = () => {
   return (
-    <div>UpdateProfile</div>
-  )
-}
+    <div>
+      <PageTitle title={"Update profile - Page"} />
+    </div>
+  );
+};
 
-export default UpdateProfile
+export default UpdateProfile;

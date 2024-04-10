@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuthContext from "../../hooks/useAuthContext";
 import { updateProfile } from "firebase/auth";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const Register = () => {
   const { createUser } = useAuthContext();
@@ -46,6 +47,7 @@ const Register = () => {
 
   return (
     <div className="w-full max-w-2xl p-8 space-y-3  shadow-cardShadow mx-auto mt-20">
+      <PageTitle title={"Register - page"} />
       <h1 className="text-2xl font-bold text-center">Register Now</h1>
       <form onSubmit={handleSubmit(handleRegister)} className="space-y-6">
         <div className="space-y-1 text-sm">
