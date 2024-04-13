@@ -1,6 +1,8 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import useAuthContext from "../../hooks/useAuthContext";
 
+import placeholderImg from "../../assets/user.png";
+
 const Header = () => {
   const { user, setUser, logoutUser } = useAuthContext();
 
@@ -59,7 +61,7 @@ const Header = () => {
               <Link to={"/user_profile"} className="peer duration-300">
                 <img
                   className="size-12 rounded-full border-2 border-primary "
-                  src={photoURL}
+                  src={photoURL || placeholderImg}
                   alt="user-profile-picture"
                 />
               </Link>

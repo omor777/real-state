@@ -10,17 +10,8 @@ import slide2 from "../../assets/slider2.jpg";
 import slide3 from "../../assets/slider3.jpg";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { useEffect, useState } from "react";
 
 const Slider = () => {
-  const [sliders, setSliders] = useState([]);
-
-  useEffect(() => {
-    fetch("/bannerData.json")
-      .then((res) => res.json())
-      .then((data) => setSliders(data));
-  }, []);
-
   return (
     <div className="mt-40 container">
       <Swiper

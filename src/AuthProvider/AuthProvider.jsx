@@ -41,12 +41,12 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  // const updateUserProfile = (name, photoUrl) => {
-  //   return updateProfile(user, {
-  //     displayName: name,
-  //     photoURL: photoUrl,
-  //   });
-  // };
+  const updateUserProfile = (name, photoUrl) => {
+    return updateProfile(user, {
+      displayName: name,
+      photoURL: photoUrl,
+    });
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -64,6 +64,7 @@ const AuthProvider = ({ children }) => {
     createUser,
     loginUser,
     googleLogin,
+    updateUserProfile,
     logoutUser,
   };
   return (
