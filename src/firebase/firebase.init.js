@@ -3,8 +3,6 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_APIKEY,
@@ -20,4 +18,4 @@ const app = initializeApp(firebaseConfig);
 
 export default app;
 
-export const APIKey = "AIzaSyBN9In2RB4069bL6xoEl301RJnlhYoRXBc";
+export const APIKey = import.meta.env.VITE_GOOGLE_MAP_APIKEY;

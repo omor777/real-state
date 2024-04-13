@@ -6,7 +6,9 @@ import Header from "../../layouts/Header/Header";
 import Footer from "../../layouts/Footer/Footer";
 
 const Login = () => {
-  const { loginUser, googleLogin } = useAuthContext();
+  const { loginUser, googleLogin, githubLogin } = useAuthContext();
+
+ 
 
   const {
     register,
@@ -18,7 +20,7 @@ const Login = () => {
 
   const location = useLocation();
 
-  console.log(location);
+  // console.log(location);
 
   const handleLogin = (data) => {
     const email = data.email;
@@ -37,6 +39,15 @@ const Login = () => {
     googleLogin()
       .then(() => {
         navigate(location.state || "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+  const handleGithubLogin = () => {
+    githubLogin()
+      .then(() => {
+        // navigate(location.state || "/");
       })
       .catch((error) => {
         console.error(error);
@@ -103,7 +114,10 @@ const Login = () => {
               </svg>
               Login with Google
             </button>
-            <button className="btn btn-outline flex-1">
+            <button
+              onClick={handleGithubLogin}
+              className="btn btn-outline flex-1"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"

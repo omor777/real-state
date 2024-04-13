@@ -17,8 +17,6 @@ const UserProfile = () => {
     );
   }
 
-  console.log(user);
-
   return (
     <section className="min-h-screen  flex flex-col justify-between">
       <div>
@@ -37,7 +35,7 @@ const UserProfile = () => {
                 {user?.displayName}
               </h2>
               <p className="px-5 text-xs sm:text-base text-gray-600 flex items-center justify-center gap-2">
-              <AiOutlineMail />
+                <AiOutlineMail />
                 {user?.email}
               </p>
             </div>
