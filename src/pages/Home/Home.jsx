@@ -1,5 +1,6 @@
 import PageTitle from "../../components/PageTitle/PageTitle";
 import RealEstate from "../../components/RealEstate/RealEstate";
+import Slider from "../../components/Slider/Slider";
 import Footer from "../../layouts/Footer/Footer";
 import Header from "../../layouts/Header/Header";
 
@@ -10,6 +11,7 @@ const Home = () => {
         <Header />
       </div>
       <div>
+        <Slider />
         <PageTitle title={"Home - page"} />
         <RealEstate />
       </div>
