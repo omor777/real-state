@@ -5,7 +5,7 @@ const RealEstate = () => {
   const { allData } = useDataLoad();
 
   return (
-    <section className="mt-24">
+    <section className="mt-32">
       <div className="container">
         <h1 className="text-4xl font-bold text-center text-black/80">
           Featured Property

@@ -22,8 +22,8 @@ const Header = () => {
   // console.log(user);
 
   return (
-    <header className="bg-white py-5 shadow-navShadow">
-      <nav className="container flex items-center justify-between">
+    <header className="bg-white py-5 shadow-navShadow fixed top-0 right-0 w-full z-10">
+      <nav className="container flex items-center justify-between ">
         <Link to="/" className="text-3xl font-bold ">
           Real<span className="text-primary">State</span>
         </Link>
