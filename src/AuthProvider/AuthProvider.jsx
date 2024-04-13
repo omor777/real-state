@@ -17,6 +17,7 @@ const auth = getAuth(app);
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
+  const [reload, setReload] = useState(false);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -55,7 +56,7 @@ const AuthProvider = ({ children }) => {
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [reload]);
 
   const authInfo = {
     user,
@@ -63,6 +64,7 @@ const AuthProvider = ({ children }) => {
     setUser,
     createUser,
     loginUser,
+    setReload,
     googleLogin,
     updateUserProfile,
     logoutUser,

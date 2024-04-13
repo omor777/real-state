@@ -4,7 +4,7 @@ import useAuthContext from "../../hooks/useAuthContext";
 import placeholderImg from "../../assets/user.png";
 
 const Header = () => {
-  const { user, setUser, logoutUser } = useAuthContext();
+  const { user, setUser, logoutUser, setReload } = useAuthContext();
 
   const navigate = useNavigate();
 
@@ -12,6 +12,7 @@ const Header = () => {
     logoutUser()
       .then(() => {
         setUser(null);
+        setReload(false);
         navigate("/");
       })
       .catch((error) => {
@@ -21,7 +22,6 @@ const Header = () => {
 
   const { displayName, photoURL } = user || {};
 
-  // console.log(user);
 
   return (
     <header className="bg-white py-5 shadow-navShadow fixed top-0 right-0 w-full z-10">
