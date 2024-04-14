@@ -1,8 +1,5 @@
-import { useEffect } from "react";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import useAuthContext from "../../hooks/useAuthContext";
-import Footer from "../../layouts/Footer/Footer";
-import Header from "../../layouts/Header/Header";
 
 const UpdateProfile = () => {
   const { user, updateUserProfile } = useAuthContext();
@@ -21,11 +18,8 @@ const UpdateProfile = () => {
   };
 
   return (
-    <section className="min-h-screen  flex flex-col justify-between">
-      <div>
-        <Header />
-      </div>
-      <div className="w-full max-w-2xl mx-auto mt-32 shadow-cardShadow p-8 rounded-md">
+    <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center mt-32">
+      <div className="w-full max-w-2xl mx-auto shadow-cardShadow p-8 rounded-md">
         <PageTitle title={"Update profile - Page"} />
         <form onSubmit={handleUpdateProfile} className="space-y-6">
           <div className="space-y-1 text-sm">
@@ -74,9 +68,6 @@ const UpdateProfile = () => {
             Update Profile
           </button>
         </form>
-      </div>
-      <div>
-        <Footer />
       </div>
     </section>
   );

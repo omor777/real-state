@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/Q9nbpRv/48-jpg.webp",
+    "name": "John Doe",
+    "phone_number": "+1234567890",
+    "email": "john.doe@example.com",
+    "skype": "john.doe_skype"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/9Z5VhCJ/51-jpg.webp",
+    "name": "Elsa Faith",
+    "phone_number": "+1987654321",
+    "email": "jane.smith@example.com",
+    "skype": "jane.smith_skype"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/pf3YykZ/52-jpg.webp",
+    "name": "Bailey Blue",
+    "phone_number": "+1122334455",
+    "email": "alice.johnson@example.com",
+    "skype": "alice.johnson_skype"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/6rvqNq8/53-jpg.webp",
+    "name": "Bob Brown",
+    "phone_number": "+1555666777",
+    "email": "bob.brown@example.com",
+    "skype": "bob.brown_skype"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/0hSVg5G/49-jpg.webp",
+    "name": "Emily Davis",
+    "phone_number": "+1888777666",
+    "email": "emily.davis@example.com",
+    "skype": "emily.davis_skype"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/1X9S5ZQ/50-jpg.webp",
+    "name": "Michael Wilson",
+    "phone_number": "+1999888777",
+    "email": "michael.wilson@example.com",
+    "skype": "michael.wilson_skype"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/q9DCZ9X/pexels-mart-production-7709242.jpg",
+    "name": "Sarah Taylor",
+    "phone_number": "+1444555666",
+    "email": "sarah.taylor@example.com",
+    "skype": "sarah.taylor_skype"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/jzQBdH8/pexels-yan-krukau-8867435.jpg",
+    "name": "David Martinez",
+    "phone_number": "+1666777888",
+    "email": "david.martinez@example.com",
+    "skype": "david.martinez_skype"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/5Ydpmnj/pexels-antoni-shkraba-5467588.jpg",
+    "name": "Linda Anderson",
+    "phone_number": "+1333444555",
+    "email": "linda.anderson@example.com",
+    "skype": "linda.anderson_skype"
+  }
+]

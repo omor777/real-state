@@ -21,7 +21,6 @@ const Header = () => {
   };
 
   const { displayName, photoURL } = user || {};
-  // console.log(photoURL);
 
   return (
     <header className="bg-white py-5 shadow-navShadow fixed top-0 right-0 w-full z-10">
@@ -42,6 +41,19 @@ const Header = () => {
               Home
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/agent"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary font-bold"
+                  : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+              }
+            >
+              Agent
+            </NavLink>
+          </li>
+
           <li>
             <NavLink
               to="/update_profile"

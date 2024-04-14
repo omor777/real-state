@@ -51,153 +51,145 @@ const Register = () => {
   };
 
   return (
-    <section className="min-h-screen  flex flex-col justify-between">
-      <div>
-        <Header />
-      </div>
-      <div className="mt-24">
-        <div className="w-full max-w-2xl p-8 space-y-3  shadow-cardShadow mx-auto mt-20">
-          <PageTitle title={"Register - page"} />
-          <h1 className="text-2xl font-bold text-center">Register Now</h1>
-          <form onSubmit={handleSubmit(handleRegister)} className="space-y-6">
-            <div className="space-y-1 text-sm">
-              <label htmlFor="name" className="block font-medium">
-                Name
-              </label>
-              <input
-                {...register("name", {
-                  required: {
-                    value: true,
-                    message: "Name is required",
+    <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center mt-40">
+      <div className="w-full max-w-2xl p-8 space-y-3  shadow-cardShadow mx-auto">
+        <PageTitle title={"Register - page"} />
+        <h1 className="text-2xl font-bold text-center">Register Now</h1>
+        <form onSubmit={handleSubmit(handleRegister)} className="space-y-6">
+          <div className="space-y-1 text-sm">
+            <label htmlFor="name" className="block font-medium">
+              Name
+            </label>
+            <input
+              {...register("name", {
+                required: {
+                  value: true,
+                  message: "Name is required",
+                },
+              })}
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              className="input w-full input-bordered"
+            />
+            {errors.name && (
+              <p className="text-red-500 text-sm ml-1">
+                {errors.name?.message}
+              </p>
+            )}
+          </div>
+          <div className="space-y-1 text-sm">
+            <label htmlFor="email" className="block font-medium">
+              Email
+            </label>
+            <input
+              {...register("email", {
+                required: {
+                  value: true,
+                  message: "Email is required",
+                },
+              })}
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              className="input w-full input-bordered"
+            />
+            {errors.email && (
+              <p className="text-red-500 text-sm ml-1">
+                {errors.email?.message}
+              </p>
+            )}
+          </div>
+          <div className="space-y-1 text-sm">
+            <label htmlFor="photoURL" className="block font-medium">
+              PhotURL
+            </label>
+            <input
+              {...register("photoURL", {
+                required: {
+                  value: true,
+                  message: "Photo url is required",
+                },
+              })}
+              type="text"
+              name="photoURL"
+              id="photoURL"
+              placeholder="Photo URL"
+              className="input w-full input-bordered"
+            />
+            {errors.photoURL && (
+              <p className="text-red-500 text-sm ml-1">
+                {errors.photoURL?.message}
+              </p>
+            )}
+          </div>
+          <div className="space-y-1 text-sm relative">
+            <label htmlFor="password" className="block font-medium">
+              Password
+            </label>
+            <input
+              {...register("password", {
+                validate: {
+                  passwordLength: (fieldValue) => {
+                    return (
+                      fieldValue.length > 5 ||
+                      "Password should not be less than 6 characters"
+                    );
                   },
-                })}
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                className="input w-full input-bordered"
-              />
-              {errors.name && (
-                <p className="text-red-500 text-sm ml-1">
-                  {errors.name?.message}
-                </p>
-              )}
-            </div>
-            <div className="space-y-1 text-sm">
-              <label htmlFor="email" className="block font-medium">
-                Email
-              </label>
-              <input
-                {...register("email", {
-                  required: {
-                    value: true,
-                    message: "Email is required",
+                  checkLowercase: (fieldValue) => {
+                    return (
+                      /^(?=.*[a-z]).+$/.test(fieldValue) ||
+                      "Password must have an lowercase letter"
+                    );
                   },
-                })}
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                className="input w-full input-bordered"
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm ml-1">
-                  {errors.email?.message}
-                </p>
-              )}
-            </div>
-            <div className="space-y-1 text-sm">
-              <label htmlFor="photoURL" className="block font-medium">
-                PhotURL
-              </label>
-              <input
-                {...register("photoURL", {
-                  required: {
-                    value: true,
-                    message: "Photo url is required",
+                  checkUppercase: (fieldValue) => {
+                    return (
+                      /^(?=.*[A-Z]).+$/.test(fieldValue) ||
+                      "Password must have an uppercase letter"
+                    );
                   },
-                })}
-                type="text"
-                name="photoURL"
-                id="photoURL"
-                placeholder="Photo URL"
-                className="input w-full input-bordered"
-              />
-              {errors.photoURL && (
-                <p className="text-red-500 text-sm ml-1">
-                  {errors.photoURL?.message}
-                </p>
-              )}
-            </div>
-            <div className="space-y-1 text-sm relative">
-              <label htmlFor="password" className="block font-medium">
-                Password
-              </label>
-              <input
-                {...register("password", {
-                  validate: {
-                    passwordLength: (fieldValue) => {
-                      return (
-                        fieldValue.length > 5 ||
-                        "Password should not be less than 6 characters"
-                      );
-                    },
-                    checkLowercase: (fieldValue) => {
-                      return (
-                        /^(?=.*[a-z]).+$/.test(fieldValue) ||
-                        "Password must have an lowercase letter"
-                      );
-                    },
-                    checkUppercase: (fieldValue) => {
-                      return (
-                        /^(?=.*[A-Z]).+$/.test(fieldValue) ||
-                        "Password must have an uppercase letter"
-                      );
-                    },
-                  },
-                })}
-                type={showPassword ? "text" : "password"}
-                name="password"
-                id="password"
-                placeholder="Password"
-                className="input w-full input-bordered "
-              />
-              {errors.password && (
-                <p className="text-red-500 text-sm ml-1">
-                  {errors.password?.message}
-                </p>
-              )}
-              <span
-                onClick={() =>
-                  setShowPassword((prevShowPassword) => !prevShowPassword)
-                }
-                className="cursor-pointer absolute top-8 right-3"
-              >
-                {showPassword ? (
-                  <FaEye className="text-2xl" />
-                ) : (
-                  <FaEyeSlash className="text-2xl" />
-                )}
-              </span>
-            </div>
-            <button
-              type="submit"
-              className="btn w-full bg-primary hover:bg-primary text-white font-semibold  uppercase"
+                },
+              })}
+              type={showPassword ? "text" : "password"}
+              name="password"
+              id="password"
+              placeholder="Password"
+              className="input w-full input-bordered "
+            />
+            {errors.password && (
+              <p className="text-red-500 text-sm ml-1">
+                {errors.password?.message}
+              </p>
+            )}
+            <span
+              onClick={() =>
+                setShowPassword((prevShowPassword) => !prevShowPassword)
+              }
+              className="cursor-pointer absolute top-8 right-3"
             >
-              Register
-            </button>
-          </form>
+              {showPassword ? (
+                <FaEye className="text-2xl" />
+              ) : (
+                <FaEyeSlash className="text-2xl" />
+              )}
+            </span>
+          </div>
+          <button
+            type="submit"
+            className="btn w-full bg-primary hover:bg-primary text-white font-semibold  uppercase"
+          >
+            Register
+          </button>
+        </form>
 
-          <p className="text-sm text-center sm:px-6 pt-3">
-            Already have an account?{" "}
-            <Link to={"/login"} className="underline font-bold text-primary">
-              Login
-            </Link>
-          </p>
-        </div>
-      </div>
-      <div>
-        <Footer />
+        <p className="text-sm text-center sm:px-6 pt-3">
+          Already have an account?{" "}
+          <Link to={"/login"} className="underline font-bold text-primary">
+            Login
+          </Link>
+        </p>
       </div>
     </section>
   );

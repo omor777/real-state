@@ -1,6 +1,4 @@
 import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
-import Footer from "../../layouts/Footer/Footer";
-import Header from "../../layouts/Header/Header";
 import { FaInstagram } from "react-icons/fa6";
 import useAuthContext from "../../hooks/useAuthContext";
 import { AiOutlineMail } from "react-icons/ai";
@@ -18,11 +16,8 @@ const UserProfile = () => {
   }
 
   return (
-    <section className="min-h-screen  flex flex-col justify-between">
-      <div>
-        <Header />
-      </div>
-      <div className="container mt-36">
+    <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center">
+      <div className="mt-32 w-full">
         <div className="flex flex-col justify-center max-w-2xl p-6 shadow-cardShadow mx-auto sm:px-12 bg-gray-50 text-gray-800">
           <img
             src={user?.photoURL || placeholderImage}
@@ -75,9 +70,6 @@ const UserProfile = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <Footer />
       </div>
     </section>
   );

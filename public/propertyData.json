@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.postimg.cc/bvRgMF4h/kara-eads-L7-Ew-Hkq1-B2s-unsplash.jpg",
+    "price": 250000,
+    "description": "Beautiful villa with breathtaking ocean view, perfect for relaxation and entertaining guests.",
+    "bedroom": 3,
+    "bathroom": 2,
+    "area": 2000,
+    "property_type": "Villa"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/TPWCJRb/isaac-quesada-1mvr-Y8os-Yk-M-unsplash.jpg",
+    "price": 180000,
+    "description": "Cozy apartment located in the heart of the city, close to all amenities and public transportation.",
+    "bedroom": 2,
+    "bathroom": 1,
+    "area": 1000,
+    "property_type": "Apartment"
+  },
+
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/Pgn444M/kari-shea-Mf-J9g64-Wx-Q-unsplash.jpg",
+    "price": 400000,
+    "description": "Luxurious penthouse boasting a spacious interior, high-end finishes, and a private rooftop terrace for entertaining.",
+    "bedroom": 3,
+    "bathroom": 3,
+    "area": 2500,
+    "property_type": "Penthouse"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/vLRrR0x/emmanuel-ikwuegbu-Bd-ZPID68yj-M-unsplash.jpg",
+    "price": 200000,
+    "description": "Quaint countryside cottage with stunning mountain views, offering tranquility and a cozy atmosphere for relaxation.",
+    "bedroom": 2,
+    "bathroom": 1,
+    "area": 1500,
+    "property_type": "Cottage"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/mB97y3P/patrick-perkins-3wyl-Drjx-H-E-unsplash.jpg",
+    "price": 280000,
+    "description": "Elegant townhouse situated in a historic district, featuring classic architecture and modern amenities for comfortable living.",
+    "bedroom": 3,
+    "bathroom": 2,
+    "area": 1800,
+    "property_type": "Townhouse"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/rFVrcsw/emmanuel-ikwuegbu-70-U9-U4-UG-b-Y-unsplash.jpg",
+    "price": 300000,
+    "description": "Contemporary duplex with a private garden patio, offering spacious living areas and stylish finishes for urban living.",
+    "bedroom": 4,
+    "bathroom": 2,
+    "area": 2200,
+    "property_type": "Duplex"
+  }
+]
