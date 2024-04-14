@@ -31,7 +31,7 @@ const UserProfile = () => {
               </h2>
               <p className="px-5 text-xs sm:text-base text-gray-600 flex items-center justify-center gap-2">
                 <AiOutlineMail />
-                {user?.email}
+                {user?.email || "Not available!"}
               </p>
             </div>
             <div className="flex justify-center pt-2 space-x-4 align-center">

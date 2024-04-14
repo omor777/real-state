@@ -2,8 +2,13 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import useAuthContext from "../../hooks/useAuthContext";
 
 import placeholderImg from "../../assets/user.png";
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Header = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   const { user, setUser, logoutUser, setReload, loading } = useAuthContext();
 
   const navigate = useNavigate();
@@ -24,11 +29,235 @@ const Header = () => {
 
   return (
     <header className="bg-white py-5 shadow-navShadow fixed top-0 right-0 w-full z-10">
-      <nav className="container flex items-center justify-between ">
+      {/* <div className="navbar bg-base-100">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <button
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </button>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52"
+            >
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-bold"
+                      : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/agent"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-bold"
+                      : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+                  }
+                >
+                  Agent
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/update_profile"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-bold"
+                      : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+                  }
+                >
+                  Update Profile
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <Link to="/" className="text-3xl font-bold ">
+            Nest<span className="text-primary">Wise</span>
+          </Link>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-bold"
+                    : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/agent"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-bold"
+                    : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+                }
+              >
+                Agent
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to="/update_profile"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary font-bold"
+                    : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+                }
+              >
+                Update Profile
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <div>
+            {user ? (
+              <div className="flex items-center space-x-3 relative">
+                <Link to={"/user_profile"} className="peer duration-300">
+                  <img
+                    className="size-12 rounded-full border-2 border-primary "
+                    src={photoURL || placeholderImg}
+                    alt="user-profile-picture"
+                  />
+                </Link>
+                <span className="absolute bg-white px-4 rounded-full py-2 font-medium shadow-md -bottom-[90%] -left-12 opacity-0 peer-hover:opacity-100 duration-300">
+                  {displayName}
+                </span>
+                <button
+                  onClick={handleLogout}
+                  className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary"
+                >
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <Link to={"/login"}>
+                <button className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary">
+                  Login
+                </button>
+              </Link>
+            )}
+          </div>
+        </div>
+      </div> */}
+
+      <nav className="container flex items-center justify-between relative">
         <Link to="/" className="text-3xl font-bold ">
-          Real<span className="text-primary">State</span>
+          Nest<span className="text-primary">Wise</span>
         </Link>
-        <ul className="flex items-center gap-6">
+        <ul className=" hidden md:flex items-center gap-6">
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary font-bold"
+                  : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/agent"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary font-bold"
+                  : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+              }
+            >
+              Agent
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/update_profile"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-primary font-bold"
+                  : " text-black/70 font-medium transition before:duration-500 relative before:absolute before:w-0 hover:before:w-full before:h-[2px] before:bg-primary before:-bottom-[2px]"
+              }
+            >
+              Update Profile
+            </NavLink>
+          </li>
+        </ul>
+        <div className="md:block hidden">
+          {user ? (
+            <div className="flex items-center space-x-3 relative">
+              <Link to={"/user_profile"} className="peer duration-300">
+                <img
+                  className="size-12 rounded-full border-2 border-primary "
+                  src={photoURL || placeholderImg}
+                  alt="user-profile-picture"
+                />
+              </Link>
+              <span className="absolute bg-white px-4 rounded-full py-2 font-medium shadow-md -bottom-[90%] -left-12 opacity-0 peer-hover:opacity-100 duration-300">
+                {displayName}
+              </span>
+              <button
+                onClick={handleLogout}
+                className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link to={"/login"}>
+              <button className="btn bg-primary text-white px-8 text-lg hover:bg-primary hover:border-primary">
+                Login
+              </button>
+            </Link>
+          )}
+        </div>
+
+        <button
+          onClick={() => setToggleMenu(true)}
+          className="block md:hidden "
+        >
+          <FaBars className="text-3xl" />
+        </button>
+      </nav>
+
+      <div
+        className={` bg-white absolute w-full shadow-cardShadow flex items-center md:hidden justify-center flex-col gap-y-5 top-0 ${
+          toggleMenu ? "max-h-[600px] py-10" : "max-h-0"
+        }  overflow-hidden  duration-300 transition-all ease-out`}
+      >
+        <ul className="flex flex-col items-center gap-4">
           <li>
             <NavLink
               to="/"
@@ -69,7 +298,7 @@ const Header = () => {
         </ul>
         <div>
           {user ? (
-            <div className="flex items-center space-x-3 relative">
+            <div className="flex items-center space-x-3 relative flex-col gap-4">
               <Link to={"/user_profile"} className="peer duration-300">
                 <img
                   className="size-12 rounded-full border-2 border-primary "
@@ -95,7 +324,13 @@ const Header = () => {
             </Link>
           )}
         </div>
-      </nav>
+        <button
+          onClick={() => setToggleMenu(false)}
+          className="absolute top-6 btn btn-ghost right-5"
+        >
+          <IoCloseSharp className="text-3xl" />
+        </button>
+      </div>
     </header>
   );
 };

@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="bg-gray-900 py-16 mt-24">
       <div className="container flex items-baseline justify-between flex-wrap">
         <div>
-          <h3 className="text-white/90 text-2xl font-bold">RealState</h3>
+          <h3 className="text-white/90 text-2xl font-bold">
+            Nest<span className="text-primary">Wise</span>
+          </h3>
           <p className="text-white/80 max-w-[265px] mt-3">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
             molestiae ad odit cum ipsa, nobis expedita illum voluptatum esse

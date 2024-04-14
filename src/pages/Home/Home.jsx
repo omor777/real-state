@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="container  min-h-[calc(100vh-448px)] flex items-center justify-center">
       <div>
-        <Slider />
+        {/* <Slider /> */}
         <PageTitle title={"Home - page"} />
         <RealEstate />
       </div>

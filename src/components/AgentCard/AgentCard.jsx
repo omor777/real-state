@@ -13,7 +13,7 @@ import { MdEmail } from "react-icons/md";
 
 const AgentCard = ({ agent }) => {
   const { image, name, phone_number, email, skype } = agent;
-  console.log(agent);
+
   return (
     <div className="rounded-md shadow-cardShadow">
       <figure>
