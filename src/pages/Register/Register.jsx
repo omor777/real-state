@@ -3,8 +3,10 @@ import { useForm } from "react-hook-form";
 import useAuthContext from "../../hooks/useAuthContext";
 import { updateProfile } from "firebase/auth";
 import PageTitle from "../../components/PageTitle/PageTitle";
-import Header from "../../layouts/Header/Header";
-import Footer from "../../layouts/Footer/Footer";
+// react tostify
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
@@ -19,7 +21,7 @@ const Register = () => {
     formState: { errors },
   } = useForm();
 
-  console.log(errors, "Error message");
+  // console.log(errors, "Error message");
 
   const navigate = useNavigate();
 
@@ -39,6 +41,7 @@ const Register = () => {
           photoURL: photoUrl,
         })
           .then(() => {
+            toast.success("Registration Successful");
             setReload(true);
           })
           .catch((error) => {

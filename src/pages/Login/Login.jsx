@@ -2,8 +2,10 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuthContext from "../../hooks/useAuthContext";
 import PageTitle from "../../components/PageTitle/PageTitle";
-import Header from "../../layouts/Header/Header";
-import Footer from "../../layouts/Footer/Footer";
+
+// react tostify
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { loginUser, googleLogin, githubLogin } = useAuthContext();
@@ -29,6 +31,7 @@ const Login = () => {
         navigate(location.state || "/");
       })
       .catch((error) => {
+        toast.error("Invalid Credential!");
         console.error(error);
       });
   };
@@ -45,7 +48,7 @@ const Login = () => {
   const handleGithubLogin = () => {
     githubLogin()
       .then(() => {
-        // navigate(location.state || "/");
+        navigate(location.state || "/");
       })
       .catch((error) => {
         console.error(error);
@@ -94,11 +97,8 @@ const Login = () => {
           <p className="px-3">Login with social accounts</p>
           <div className="flex-1 h-px sm:w-16 bg-gray-400"></div>
         </div>
-        <div className="flex items-center justify-center space-x-4 ">
-          <button
-            onClick={handleGoogleLogin}
-            className="btn btn-outline  flex-1"
-          >
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <button onClick={handleGoogleLogin} className="btn btn-outline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
@@ -108,10 +108,7 @@ const Login = () => {
             </svg>
             Login with Google
           </button>
-          <button
-            onClick={handleGithubLogin}
-            className="btn btn-outline flex-1"
-          >
+          <button onClick={handleGithubLogin} className="btn btn-outline ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
