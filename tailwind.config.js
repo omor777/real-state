@@ -14,7 +14,7 @@ export default {
         center: true,
       },
       colors: {
-        primary: "#648B37",
+        primary: "#5EA51D",
         secondary: "#EE5A24",
         "sky-80": "#0CA5B1cc",
       },

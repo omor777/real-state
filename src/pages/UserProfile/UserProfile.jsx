@@ -16,8 +16,8 @@ const UserProfile = () => {
   }
 
   return (
-    <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center">
-      <div className="mt-32 w-full">
+    <section className="container  min-h-[calc(100vh-370px)] flex items-center justify-center px-4 md:px-0">
+      <div className="w-full mt-36">
         <div className="flex flex-col justify-center max-w-2xl p-6 shadow-cardShadow mx-auto sm:px-12 bg-gray-50 text-gray-800">
           <img
             data-aos="zoom-in"

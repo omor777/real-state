@@ -13,8 +13,9 @@ const Neighborhoods = () => {
         data-aos-duration="800"
         className="max-w-xl mx-auto text-center mt-3 text-black/70"
       >
-        Publish the best of your client testimonials and let the world know what
-        a great agent or real estate agency you are. Testimonials build trust.
+        Explore our handpicked selection of featured neighborhoods, each
+        offering its own unique charm and character. Find the perfect community
+        to call home.
       </p>
       <div className="mt-10 grid grid-cols-12 gap-2">
         <div

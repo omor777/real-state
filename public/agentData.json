@@ -46,29 +46,5 @@
     "phone_number": "+1999888777",
     "email": "michael.wilson@example.com",
     "skype": "michael.wilson_skype"
-  },
-  {
-    "id": 7,
-    "image": "https://i.ibb.co/q9DCZ9X/pexels-mart-production-7709242.jpg",
-    "name": "Sarah Taylor",
-    "phone_number": "+1444555666",
-    "email": "sarah.taylor@example.com",
-    "skype": "sarah.taylor_skype"
-  },
-  {
-    "id": 8,
-    "image": "https://i.ibb.co/jzQBdH8/pexels-yan-krukau-8867435.jpg",
-    "name": "David Martinez",
-    "phone_number": "+1666777888",
-    "email": "david.martinez@example.com",
-    "skype": "david.martinez_skype"
-  },
-  {
-    "id": 9,
-    "image": "https://i.ibb.co/5Ydpmnj/pexels-antoni-shkraba-5467588.jpg",
-    "name": "Linda Anderson",
-    "phone_number": "+1333444555",
-    "email": "linda.anderson@example.com",
-    "skype": "linda.anderson_skype"
   }
 ]

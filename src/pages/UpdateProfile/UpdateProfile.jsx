@@ -18,7 +18,7 @@ const UpdateProfile = () => {
   };
 
   return (
-    <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center mt-32">
+    <section className="container  mt-36 px-4 md:px-0">
       <div className="w-full max-w-2xl mx-auto shadow-cardShadow p-8 rounded-md">
         <PageTitle title={"Update profile - Page"} />
         <form onSubmit={handleUpdateProfile} className="space-y-6">

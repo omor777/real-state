@@ -54,7 +54,7 @@ const Register = () => {
   };
 
   return (
-    <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center mt-40">
+    <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center mt-32 px-4 md:px-0 md:mt-40">
       <div className="w-full max-w-2xl p-8 space-y-3  shadow-cardShadow mx-auto">
         <PageTitle title={"Register - page"} />
         <h1 className="text-2xl font-bold text-center">Register Now</h1>

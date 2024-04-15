@@ -24,8 +24,9 @@ const Testimonials = () => {
         data-aos-duration="800"
         className="max-w-xl mx-auto text-center mt-3 text-black/70 text-sm md:text-base"
       >
-        Publish the best of your client testimonials and let the world know what
-        a great agent or real estate agency you are. Testimonials build trust.
+        See what our clients are saying about their journey with us. From
+        first-time buyers to seasoned investors, read testimonials that
+        highlight our dedication to exceeding expectations.
       </p>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {testimonials.map((testimonial) => (

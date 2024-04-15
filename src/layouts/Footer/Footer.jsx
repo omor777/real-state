@@ -2,7 +2,7 @@ import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 p-16 mt-24">
+    <footer className="bg-gray-900 p-16 mt-16 md:mt-20">
       <div className="footer  container ">
         <aside>
           <div>
@@ -10,9 +10,9 @@ const Footer = () => {
               Nest<span className="text-primary">Wise</span>
             </h3>
             <p className="text-white/80 max-w-[265px] mt-3">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-              molestiae ad odit cum ipsa, nobis expedita illum voluptatum esse
-              dolorum?
+              Welcome to <b className="text-primary">NestWise</b> your trusted
+              partner in finding the perfect nest for you. Explore our site and
+              discover a world of possibilities for your next home.
             </p>
             <ul className="flex items-center gap-x-3 mt-5">
               <li className="size-10 rounded-full bg-gray-700 cursor-pointer flex items-center justify-center ">

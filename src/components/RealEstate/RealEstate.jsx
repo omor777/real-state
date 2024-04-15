@@ -19,8 +19,9 @@ const RealEstate = () => {
           data-aos-duration="1000"
           className="max-w-xl mx-auto text-center mt-3 text-black/70"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          magni explicabo optio deserunt libero. Incidunt?
+          Experience the pinnacle of real estate excellence with our featured
+          properties. Let us guide you to the home of your dreams, where every
+          detail is crafted for perfection.
         </p>
         {/* Estate Card */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
