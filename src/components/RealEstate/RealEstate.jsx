@@ -8,14 +8,14 @@ const RealEstate = () => {
     <section className="mt-32">
       <div className="container">
         <h1
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-duration="1000"
           className="text-4xl font-bold text-center text-black/80"
         >
           Featured Property
         </h1>
         <p
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="1000"
           className="max-w-xl mx-auto text-center mt-3 text-black/70"
         >

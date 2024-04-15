@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/41kt3f7/samuel-raita-Ri-Dx-Dg-Hg7pw-unsplash.jpg",
+    "name": "David Johnson",
+    "profession": "Home Buyer",
+    "review_text": "Smooth process from viewing to closing. Highly recommend this agency for their professionalism."
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/dkQ7RC6/christian-buehner-DIt-Ylc26z-VI-unsplash.jpg",
+    "name": "Jane Smith",
+    "profession": "Property Investor",
+    "review_text": "Best real estate experience ever! This agency truly understands the market and helped me find my dream property."
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/PWqQ5bQ/christina-wocintechchat-com-0-Zx1b-Dv5-BNY-unsplash.jpg",
+    "name": "Sarah Davis",
+    "profession": "Home Seller",
+    "review_text": "Exceptional service! Sold my property in record time with their expertise and guidance."
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/WvxXqj7/irene-strong-v2a-Knj-Mb-P-k-unsplash.jpg",
+    "name": "John Doe",
+    "profession": "Renter",
+    "review_text": "Amazing support from the team. Found the perfect rental property within days of contacting them."
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/j4b3mrp/andriyko-podilnyk-j-FAG-ix-Crs-M-unsplash.jpg",
+    "name": "Emily Brown",
+    "profession": "Real Estate Agent",
+    "review_text": "Impressed by their dedication to client satisfaction. A great partner for any real estate transaction."
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/DCx5rY8/albert-dera-ILip77-Sbm-OE-unsplash.jpg",
+    "name": "Michael Wilson",
+    "profession": "Home Buyer",
+    "review_text": "Incredibly knowledgeable about the local market. Helped me find the ideal home for my family."
+  }
+]
