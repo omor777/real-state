@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="container px-4 md:px-0">
       <div>
-        <PageTitle title={"Home - page"} />
+        <PageTitle title={"Home | Nestwise"} />
         <Slider />
         <Neighborhoods />
         <RealEstate />

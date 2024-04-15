@@ -155,7 +155,7 @@ const Header = () => {
         </ul>
         <div>
           {user ? (
-            <div className="flex items-center space-x-3 relative flex-col gap-4">
+            <div className="flex items-center space-x-3 relative flex-col gap-4 ">
               <Link to={"/user_profile"} className="peer duration-300">
                 <img
                   className="size-12 rounded-full border-2 border-primary "
@@ -163,7 +163,7 @@ const Header = () => {
                   alt="user-profile-picture"
                 />
               </Link>
-              <span className="absolute bg-white px-4 rounded-full py-2 font-medium shadow-md -bottom-[90%] -left-12 opacity-0 peer-hover:opacity-100 duration-300">
+              <span className="absolute bg-white px-4 rounded-full py-2 font-medium shadow-md  -right-20 opacity-0 peer-hover:opacity-100 duration-300 text-sm">
                 {displayName}
               </span>
               <button

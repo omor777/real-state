@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa6";
 import useAuthContext from "../../hooks/useAuthContext";
 import { AiOutlineMail } from "react-icons/ai";
 import placeholderImage from "../../assets/user.png";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const UserProfile = () => {
   const { user, loading } = useAuthContext();
@@ -17,6 +18,7 @@ const UserProfile = () => {
 
   return (
     <section className="container  min-h-[calc(100vh-370px)] flex items-center justify-center px-4 md:px-0">
+      <PageTitle title={'User profile | Nestwise'}/>
       <div className="w-full mt-36">
         <div className="flex flex-col justify-center max-w-2xl p-6 shadow-cardShadow mx-auto sm:px-12 bg-gray-50 text-gray-800">
           <img

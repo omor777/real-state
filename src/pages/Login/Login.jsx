@@ -56,7 +56,7 @@ const Login = () => {
 
   return (
     <section className="container  min-h-[calc(100vh-448px)] flex items-center justify-center mt-32 md:mt-40 px-4 md:px-0">
-      <PageTitle title={"Login - page"} />
+      <PageTitle title={"Login | Nestwise"} />
       <div className="w-full max-w-2xl p-8 space-y-3  shadow-cardShadow mx-auto">
         <h1 className="text-2xl font-bold text-center">Login Now</h1>
         <form onSubmit={handleSubmit(handleLogin)} className="space-y-6">

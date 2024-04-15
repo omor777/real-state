@@ -46,7 +46,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-slider1  bg-cover bg-center bg-no-repeat h-[450px] ">
+          <div className="bg-slider2  bg-cover bg-center bg-no-repeat h-[450px] ">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-full ">
               <h1 className="text-[clamp(26px,5vw,64px)] font-bold text-center lg:leading-[72px] text-white">
                 Let Your Home Be Unique <br /> & Stylist
@@ -61,7 +61,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-slider1  bg-cover bg-center bg-no-repeat h-[450px] ">
+          <div className="bg-slider3  bg-cover bg-center bg-no-repeat h-[450px] ">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-full ">
               <h1 className="text-[clamp(26px,5vw,64px)] font-bold text-center lg:leading-[72px] text-white">
                 Your Property Is Our <br /> Priority
