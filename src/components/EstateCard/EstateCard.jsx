@@ -7,7 +7,11 @@ const EstateCard = ({ item }) => {
     item;
   // console.log(facilities);
   return (
-    <div data-aos="fade-up" data-aos-duration="1000" className=" shadow-cardShadow rounded-md">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className=" shadow-cardShadow rounded-md"
+    >
       <div className="relative">
         <img
           src={image}
@@ -21,10 +25,10 @@ const EstateCard = ({ item }) => {
       <div className="flex flex-col justify-between p-4 space-y-8">
         <div className="space-y-4">
           <div className="flex items-center justify-between flex-wrap">
-            <p className="font-semibold text-black/80">{segment_name}</p>
+            <p className="font-semibold text-black/80 ">{segment_name}</p>
             <h2 className="font-extrabold text-primary">{price}</h2>
           </div>
-          <h2 className="text-2xl font-semibold tracking-wide mt-2">
+          <h2 className="text-xl md:text-2xl font-semibold mt-2">
             {estate_title}
           </h2>
           <p className="text-gray-500">{description}</p>

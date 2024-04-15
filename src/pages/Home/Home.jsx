@@ -5,7 +5,7 @@ import Slider from "../../components/Slider/Slider";
 import Testimonials from "../../components/Testimonials/Testimonials";
 const Home = () => {
   return (
-    <div className="container  min-h-[calc(100vh-448px)] flex items-center justify-center">
+    <div className="container px-4 md:px-0">
       <div>
         <PageTitle title={"Home - page"} />
         <Slider />

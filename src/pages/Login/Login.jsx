@@ -25,6 +25,7 @@ const Login = () => {
     loginUser(email, password)
       .then(() => {
         navigate(location.state || "/");
+        toast.success("Login Successful");
       })
       .catch((error) => {
         toast.error("Invalid Credential!");
@@ -36,6 +37,7 @@ const Login = () => {
     googleLogin()
       .then(() => {
         navigate(location.state || "/");
+        toast.success("Login Successful");
       })
       .catch((error) => {
         console.error(error);
@@ -45,6 +47,7 @@ const Login = () => {
     githubLogin()
       .then(() => {
         navigate(location.state || "/");
+        toast.success("Login Successful");
       })
       .catch((error) => {
         console.error(error);

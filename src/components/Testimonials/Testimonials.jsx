@@ -15,14 +15,14 @@ const Testimonials = () => {
       <h1
         data-aos="fade-down"
         data-aos-duration="800"
-        className="text-4xl font-bold text-center text-black/80"
+        className="text-[clamp(28px,5vw,36px)] font-bold text-center text-black/80 "
       >
         Testimonials
       </h1>
       <p
         data-aos="fade-up"
         data-aos-duration="800"
-        className="max-w-xl mx-auto text-center mt-3 text-black/70"
+        className="max-w-xl mx-auto text-center mt-3 text-black/70 text-sm md:text-base"
       >
         Publish the best of your client testimonials and let the world know what
         a great agent or real estate agency you are. Testimonials build trust.

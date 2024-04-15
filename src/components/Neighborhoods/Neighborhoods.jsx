@@ -1,10 +1,10 @@
 const Neighborhoods = () => {
   return (
-    <div className="mt-24">
+    <div className="mt-16 md:mt-20">
       <h1
         data-aos="fade-down"
         data-aos-duration="800"
-        className="text-4xl font-bold text-center text-black/80"
+        className="text-[clamp(28px,5vw,36px)] font-bold text-center text-black/80"
       >
         Featured Neighborhoods
       </h1>
