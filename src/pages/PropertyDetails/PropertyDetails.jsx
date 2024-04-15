@@ -1,11 +1,7 @@
 import { useParams, useLoaderData } from "react-router-dom";
-// import useDataLoad from "../../hooks/useDataLoad";
-// import { useEffect, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 
 import SimpleGoogleMap from "../../components/GoogleMap/GoogleMap";
-import Header from "../../layouts/Header/Header";
-import Footer from "../../layouts/Footer/Footer";
 
 const PropertyDetails = () => {
   let { id } = useParams();
@@ -46,7 +42,7 @@ const PropertyDetails = () => {
               {segment_name}
             </span>
           </div>
-          <div className="lg:flex items-center justify-between mt-5">
+          <div className="sm:flex items-center justify-between mt-5">
             <div className="space-y-3">
               <h1 className="text-[clamp(22px,3vw,30px)] font-bold text-black/80">
                 {estate_title}
@@ -56,7 +52,7 @@ const PropertyDetails = () => {
               </p>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-3 mt-4 sm:mt-0">
               <h2 className="text-[22px] font-bold text-primary"> {price}</h2>
               <p className="flex items-center gap-2  font-medium text-black/70">
                 <svg

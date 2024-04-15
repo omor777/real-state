@@ -1,21 +1,13 @@
-import { IoLocationSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
+import PropTypes from "prop-types";
+
 const EstateCard = ({ item }) => {
-  const {
-    image,
-    estate_title,
-    description,
-    segment_name,
-    location,
-    price,
-    status,
-    facilities,
-    id,
-  } = item;
+  const { image, estate_title, description, segment_name, price, status, id } =
+    item;
   // console.log(facilities);
   return (
-    <div className=" shadow-cardShadow rounded-md">
+    <div data-aos="fade-up" data-aos-duration="1000" className=" shadow-cardShadow rounded-md">
       <div className="relative">
         <img
           src={image}
@@ -29,9 +21,7 @@ const EstateCard = ({ item }) => {
       <div className="flex flex-col justify-between p-4 space-y-8">
         <div className="space-y-4">
           <div className="flex items-center justify-between flex-wrap">
-            <p className="font-semibold text-black/80">
-              {segment_name}
-            </p>
+            <p className="font-semibold text-black/80">{segment_name}</p>
             <h2 className="font-extrabold text-primary">{price}</h2>
           </div>
           <h2 className="text-2xl font-semibold tracking-wide mt-2">
@@ -50,6 +40,10 @@ const EstateCard = ({ item }) => {
       </div>
     </div>
   );
+};
+
+EstateCard.propTypes = {
+  item: PropTypes.object.isRequired,
 };
 
 export default EstateCard;

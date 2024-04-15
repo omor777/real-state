@@ -10,11 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Login = () => {
   const { loginUser, googleLogin, githubLogin } = useAuthContext();
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const navigate = useNavigate();
 
@@ -27,7 +23,7 @@ const Login = () => {
     const password = data.password;
 
     loginUser(email, password)
-      .then((result) => {
+      .then(() => {
         navigate(location.state || "/");
       })
       .catch((error) => {

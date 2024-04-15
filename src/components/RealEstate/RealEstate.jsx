@@ -7,10 +7,18 @@ const RealEstate = () => {
   return (
     <section className="mt-32">
       <div className="container">
-        <h1 className="text-4xl font-bold text-center text-black/80">
+        <h1
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="text-4xl font-bold text-center text-black/80"
+        >
           Featured Property
         </h1>
-        <p className="max-w-xl mx-auto text-center mt-3 text-black/70">
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="max-w-xl mx-auto text-center mt-3 text-black/70"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           magni explicabo optio deserunt libero. Incidunt?
         </p>

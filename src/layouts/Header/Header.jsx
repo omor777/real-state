@@ -9,7 +9,7 @@ import { IoCloseSharp } from "react-icons/io5";
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const { user, setUser, logoutUser, setReload, loading } = useAuthContext();
+  const { user, setUser, logoutUser, setReload } = useAuthContext();
 
   const navigate = useNavigate();
 
@@ -172,8 +172,8 @@ const Header = () => {
         </div>
       </div> */}
 
-      <nav className="container flex items-center justify-between relative">
-        <Link to="/" className="text-3xl font-bold ">
+      <nav className="container flex items-center justify-between relative px-4 md:px-0">
+        <Link to="/" className="text-2xl md:text-3xl font-bold ">
           Nest<span className="text-primary">Wise</span>
         </Link>
         <ul className=" hidden md:flex items-center gap-6">
@@ -248,7 +248,7 @@ const Header = () => {
           onClick={() => setToggleMenu(true)}
           className="block md:hidden "
         >
-          <FaBars className="text-3xl" />
+          <FaBars className="text-2xl" />
         </button>
       </nav>
 

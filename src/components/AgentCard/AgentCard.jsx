@@ -1,21 +1,25 @@
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedin,
   FaLinkedinIn,
   FaPhoneAlt,
-  FaPinterest,
   FaPinterestP,
   FaSkype,
   FaTwitter,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+import PropTypes from "prop-types";
+
 const AgentCard = ({ agent }) => {
   const { image, name, phone_number, email, skype } = agent;
 
   return (
-    <div className="rounded-md shadow-cardShadow">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="rounded-md shadow-cardShadow"
+    >
       <figure>
         <img
           src={image}
@@ -61,6 +65,10 @@ const AgentCard = ({ agent }) => {
       </div>
     </div>
   );
+};
+
+AgentCard.propTypes = {
+  agent: PropTypes.object.isRequired,
 };
 
 export default AgentCard;

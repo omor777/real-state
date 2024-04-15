@@ -20,22 +20,37 @@ const UserProfile = () => {
       <div className="mt-32 w-full">
         <div className="flex flex-col justify-center max-w-2xl p-6 shadow-cardShadow mx-auto sm:px-12 bg-gray-50 text-gray-800">
           <img
+            data-aos="zoom-in"
+            data-aos-duration="1000"
             src={user?.photoURL || placeholderImage}
             alt=""
             className="w-32 h-32 mx-auto rounded-full bg-gray-500 aspect-square"
           />
           <div className="space-y-4 text-center divide-y divide-gray-300">
             <div className="my-2 space-y-1">
-              <h2 className="text-xl font-semibold sm:text-2xl">
+              <h2
+                data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-delay="1200"
+                className="text-xl font-semibold sm:text-2xl"
+              >
                 {user?.displayName}
               </h2>
-              <p className="px-5 text-xs sm:text-base text-gray-600 flex items-center justify-center gap-2">
+              <p
+                data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-delay="1500"
+                className="px-5 text-xs sm:text-base text-gray-600 flex items-center justify-center gap-2"
+              >
                 <AiOutlineMail />
                 {user?.email || "Not available!"}
               </p>
             </div>
             <div className="flex justify-center pt-2 space-x-4 align-center">
               <a
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="1700"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="GitHub"
@@ -44,6 +59,9 @@ const UserProfile = () => {
                 <FaFacebookF />
               </a>
               <a
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="1900"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Dribble"
@@ -52,6 +70,9 @@ const UserProfile = () => {
                 <FaTwitter />
               </a>
               <a
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="2100"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Twitter"
@@ -60,6 +81,9 @@ const UserProfile = () => {
                 <FaInstagram />
               </a>
               <a
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="2300"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Email"
