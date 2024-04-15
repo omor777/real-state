@@ -1,13 +1,24 @@
-# My Awesome Website
+# NestWise
 
-Live Site: [www.myawesomewebsite.com](https://real-state-9e79a.web.app/)
+Live Site: [https://real-state-9e79a.web.app](https://real-state-9e79a.web.app/)
 
 ## Features and Characteristics:
+
 - User-friendly interface with intuitive navigation
 - Responsive design for seamless experience across devices
-- Robust search functionality for easy content discovery
+- Interactive maps to visualize property locations
 - Secure user authentication and authorization system
 - Interactive elements for enhanced user engagement
 
 ## NPM Package Used:
-- ChallengeTaskManager (npm package name)
+
+- react-hook-form
+- react-helmet
+- prop-types
+- google-map-react
+- firebase
+- aos
+- swiper
+- react-toastify
+- react-router-dom
+- react-icons
