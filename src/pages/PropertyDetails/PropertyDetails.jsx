@@ -2,6 +2,7 @@ import { useParams, useLoaderData } from "react-router-dom";
 import { IoLocationOutline } from "react-icons/io5";
 
 import SimpleGoogleMap from "../../components/GoogleMap/GoogleMap";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const PropertyDetails = () => {
   let { id } = useParams();
@@ -24,7 +25,9 @@ const PropertyDetails = () => {
   } = property[0] || [];
 
   return (
-    <div className="container mt-40 mb-10 grid grid-cols-1 lg:grid-cols-12 gap-6">
+    <div className="container mt-32 md:mt-40 mb-10 grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <PageTitle title={"Property details | Nestwise"} />
+
       <div className="lg:col-span-7 border border-gray-200">
         <div className="relative">
           <img

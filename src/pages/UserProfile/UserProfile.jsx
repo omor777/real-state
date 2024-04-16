@@ -17,10 +17,10 @@ const UserProfile = () => {
   }
 
   return (
-    <section className="container  min-h-[calc(100vh-370px)] flex items-center justify-center px-4 md:px-0">
-      <PageTitle title={'User profile | Nestwise'}/>
-      <div className="w-full mt-36">
-        <div className="flex flex-col justify-center max-w-2xl p-6 shadow-cardShadow mx-auto sm:px-12 bg-gray-50 text-gray-800">
+    <>
+      <PageTitle title={"User profile | Nestwise"} />
+      <div className="min-h-[calc(100vh-602px)] mt-40 md:mt-48 px-4 md:px-0">
+        <div className="max-w-2xl p-6 shadow-cardShadow mx-auto sm:px-12 bg-gray-50 text-gray-800">
           <img
             data-aos="zoom-in"
             data-aos-duration="1000"
@@ -97,7 +97,7 @@ const UserProfile = () => {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

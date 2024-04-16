@@ -19,6 +19,8 @@ const Neighborhoods = () => {
       </p>
       <div className="mt-10 grid grid-cols-12 gap-2">
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className={`bg-home1 bg-no-repeat bg-center bg-cover h-[260px] col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3`}
         >
           <div className="flex flex-col justify-between  h-full py-5 pl-5">
@@ -29,6 +31,8 @@ const Neighborhoods = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className={`bg-home2 bg-no-repeat bg-center bg-cover h-[260px] col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3`}
         >
           <div className="flex flex-col justify-between  h-full py-5 pl-5">
@@ -39,6 +43,8 @@ const Neighborhoods = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className={`bg-home3 bg-no-repeat bg-center bg-cover h-[260px] col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6`}
         >
           <div className="flex flex-col justify-between  h-full py-5 pl-5">
@@ -49,6 +55,8 @@ const Neighborhoods = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className={`bg-home4 bg-no-repeat bg-center bg-cover h-[260px] col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6`}
         >
           <div className="flex flex-col justify-between  h-full py-5 pl-5">
@@ -59,6 +67,8 @@ const Neighborhoods = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className={`bg-home5 bg-no-repeat bg-center bg-cover h-[260px] col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3`}
         >
           <div className="flex flex-col justify-between  h-full py-5 pl-5">
@@ -69,6 +79,8 @@ const Neighborhoods = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className={`bg-home6 bg-no-repeat bg-center bg-cover h-[260px] col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3`}
         >
           <div className="flex flex-col justify-between  h-full py-5 pl-5">
